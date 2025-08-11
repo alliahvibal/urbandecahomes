@@ -1,4 +1,5 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function DecaCubao() {
   return (
@@ -55,19 +56,25 @@ function DecaCubao() {
               </ul>
             </div>
 
-        <div style={{margin: "50px"}}>
-            <Button
-              variant="primary"
-              size="lg"
-              className="me-3"
-              href="/contact"
-            >
-              Get Updates
-            </Button>
-            <Button variant="outline-primary" size="lg" href="/properties">
-              View Other Properties
-            </Button>
-        </div>
+            <div style={{ margin: "50px" }}>
+              <Button
+                as={Link}
+                to="/contact"
+                variant="primary"
+                size="lg"
+                className="me-3"
+              >
+                Get Updates
+              </Button>
+              <Button
+                as={Link}
+                to="/properties"
+                variant="outline-primary"
+                size="lg"
+              >
+                View Other Properties
+              </Button>
+            </div>
           </Col>
         </Row>
       </Container>

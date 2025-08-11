@@ -1,4 +1,5 @@
 import { Container, Row, Col, Card, Button, Carousel } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "../css/DecaOrtigas.css";
 import "../css/bootstrap.min.css";
 
@@ -77,10 +78,11 @@ function DecaOrtigas() {
               </div>
 
               <Button
+                as={Link}
+                to="/contact"
                 variant="primary"
                 size="lg"
                 className="w-100 btn-brown"
-                href="/contact"
               >
                 Inquire Now
               </Button>
@@ -174,7 +176,7 @@ function DecaOrtigas() {
       </Container>
 
       {/* Call to Action*/}
-      <section className="gradient py-5" style={{marginTop: "100px"}}>
+      <section className="gradient py-5" style={{ marginTop: "100px" }}>
         <Container>
           <Row className="justify-content-center">
             <Col md={10} lg={8} className="text-center">
@@ -186,14 +188,20 @@ function DecaOrtigas() {
                 availability.
               </p>
               <Button
+                as={Link}
+                to="/contact"
                 variant="secondary"
                 size="lg"
                 className="me-3 btn-secondary"
-                href="/contact"
               >
                 Contact Sales Team
               </Button>
-              <Button className="btn-outline" size="lg" href="/properties">
+              <Button
+                as={Link}
+                to="/properties"
+                className="btn-outline"
+                size="lg"
+              >
                 View Other Properties
               </Button>
             </Col>

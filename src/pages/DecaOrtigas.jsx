@@ -193,8 +193,8 @@ function DecaOrtigas() {
               >
                 Contact Sales Team
               </Button>
-              <Button className="btn-outline" size="lg" href="/projects">
-                View Other Projects
+              <Button className="btn-outline" size="lg" href="/properties">
+                View Other Properties
               </Button>
             </Col>
           </Row>

@@ -34,9 +34,16 @@ function Navbar() {
                 Home
               </Nav.Link>
             </LinkContainer>
+            <LinkContainer to="/properties">
+              <Nav.Link
+                className={location.pathname === "/properties" ? "active" : ""}
+              >
+                Properties
+              </Nav.Link>
+            </LinkContainer>
             <LinkContainer to="/projects">
               <Nav.Link
-                className={location.pathname === "/projects" ? "active" : ""} 
+                className={location.pathname === "/projects" ? "active" : ""}
               >
                 Projects
               </Nav.Link>

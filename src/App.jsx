@@ -17,6 +17,7 @@ import DecaOrtigas from "./pages/DecaOrtigas";
 import DecaCubao from "./pages/DecaCubao";
 import DecaLitex from "./pages/DecaLitex";
 import DecaManila from "./pages/DecaManila";
+import Properties from "./pages/Properties";
 import "./App.css";
 import "./css/animations.css";
 import { useEffect, useLayoutEffect } from "react";
@@ -78,6 +79,7 @@ function AppShell() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/properties" element={<Properties />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<About />} />
         <Route path="/amenities" element={<Amenities />} />

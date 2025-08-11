@@ -64,8 +64,8 @@ function DecaManila() {
             >
               Get Updates
             </Button>
-            <Button variant="outline-primary" size="lg" href="/projects">
-              View Other Projects
+            <Button variant="outline-primary" size="lg" href="/properties">
+              View Other Properties
             </Button>
         </div>
           </Col>

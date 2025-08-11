@@ -1,0 +1,133 @@
+.project-cards.flip-in {
+  perspective: 1200px;
+}
+.project-cards.flip-in .project-card {
+  opacity: 0;
+  filter: blur(2px);
+  transition: all 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  backface-visibility: hidden;
+}
+/* Initial directions per card (3 cards) */
+.project-cards.flip-in .project-card:nth-child(1) {
+  transform: translateX(-300px) scale(0.9);
+}
+.project-cards.flip-in .project-card:nth-child(2) {
+  transform: translateX(300px) scale(0.9);
+}
+.project-cards.flip-in .project-card:nth-child(3) {
+  transform: translateX(-300px) scale(0.9);
+}
+/* Activation when projects are loaded */
+.projects.projects-loaded .project-cards.flip-in .project-card {
+  opacity: 1;
+  transform: translateX(0) translateY(0) scale(1);
+  filter: blur(0);
+}
+/* Stagger per provided delays */
+.projects.projects-loaded .project-cards.flip-in .project-card:nth-child(1) {
+  transition-delay: 0.01s;
+}
+.projects.projects-loaded .project-cards.flip-in .project-card:nth-child(2) {
+  transition-delay: 0.03s;
+}
+.projects.projects-loaded .project-cards.flip-in .project-card:nth-child(3) {
+  transition-delay: 0.05s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-cards.flip-in .project-card,
+  .projects.projects-loaded .project-cards.flip-in .project-card {
+    transition-duration: 1ms !important;
+    transform: none !important;
+    opacity: 1 !important;
+    filter: none !important;
+  }
+}
+
+.slide-in-from-right.active {
+  animation: slideInFromRightEnhanced 650ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.slide-in-from-left.active {
+  animation: slideInFromLeftEnhanced 650ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes slideInFromRightEnhanced {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(-2%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromLeftEnhanced {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(2%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .slide-in-from-right.active,
+  .slide-in-from-left.active {
+    animation-duration: 1ms;
+    animation-iteration-count: 1;
+  }
+}
+
+/* Reveal from below */
+.reveal {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Simple fade-in utility */
+.animate {
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Upward append animation used by carousel overlay */
+/* Animate when the carousel slide becomes active */
+.carousel-item.active .carousel-desc-overlay {
+  animation: riseIn 700ms ease-out both;
+}
+@keyframes riseIn {
+  from {
+    transform: translateY(24px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

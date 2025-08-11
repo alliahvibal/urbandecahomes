@@ -1,0 +1,58 @@
+/* Minimalist Footer styles */
+
+.site-footer {
+  background: #363636;
+  color: #eee;
+}
+
+.footer-top {
+  background: #363636;
+  color: #ddd;
+}
+
+.footer-bottom {
+  background: #363636;
+  color: #dddd;
+}
+
+/* Footer logo */
+.footer-logo img {
+  height: 42px;
+  width: auto;
+  display: block;
+}
+.footer-col {
+  font-size: 0.92rem;
+}
+
+.footer-inline-icon {
+  font-size: 1.2rem;
+  color: #b98b24;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #eee;
+}
+
+.footer-text {
+  margin: 0;
+  opacity: 0.9;
+  color: #ddd;
+}
+
+.footer-brand-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ddd;
+}
+
+.footer-brand .btn {
+  margin-top: 0.25rem;
+}
+@media (max-width: 767.98px) {
+  .footer-col {
+    text-align: center;
+  }
+}

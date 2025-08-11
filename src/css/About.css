@@ -1,0 +1,28 @@
+/* About Page Specific Styles */
+
+.about-page {
+  /* fallback horizontal padding for very small screens */
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Prefer container-based padding using Bootstrap utility classes; this keeps sides equal */
+.about-page .container {
+  /* ensure equal side gutter if custom/global rules interfere */
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 992px) {
+  .about-page .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+/* Balance paragraph presentation: avoid extra perceived left bias from text-indent on this page */
+.about-page .custom-indent {
+  text-indent: 0; /* keep justify and line-height from global */
+}
+
+

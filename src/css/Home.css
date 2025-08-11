@@ -1,0 +1,104 @@
+/* Home Page Specific Styles */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+.carousel-fullscreen {
+  height: 88vh !important;
+}
+.carousel-slide-wrapper {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.carousel-image {
+  object-fit: cover;
+  height: 88vh;
+  width: 100%;
+}
+.carousel-desc-overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  padding-bottom: 12rem;
+}
+.carousel-desc-overlay.animate-up {
+  animation: riseIn 700ms ease-out both;
+}
+@keyframes riseIn {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.carousel-desc-center {
+  display: flex;
+  justify-content: center;
+}
+.carousel-desc-content {
+  max-width: 700px;
+  width: 100%;
+}
+.carousel-title {
+  font-size: 3rem;
+}
+.carousel-description {
+  text-align: center;
+}
+
+.zoom-on-hover:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.zoom-on-hover,
+.item.zoom-on-hover {
+  overflow: hidden;
+}
+
+.page.landing-page {
+  overflow-x: hidden;
+}
+
+.counter-bg {
+  position: relative;
+  background-image: linear-gradient(
+      rgba(35, 35, 35, 0.7),
+      rgba(30, 30, 30, 0.8)
+    ),
+    url("/assets/images/perspective6.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px 0;
+}
+
+.parallax h1,
+.parallax h2,
+.parallax h3,
+.parallax h4,
+.parallax h5,
+.parallax h6,
+.parallax p {
+  color: #ffffff;
+}
+
+.page-footer {
+  color: white;
+  padding: 35px 0 20px 0;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+}
+
+/* Smooth zoom for gallery items */
+.zoom-on-hover img {
+  transition: transform 0.3s ease;
+}

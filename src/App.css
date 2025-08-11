@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+/* Dark Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 12px;
+  background: #222;
+}
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 6px;
+}
+
+html {
+  scrollbar-color: #444 #222;
+  scrollbar-width: thin;
+}
+
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.App {
+  font-family: "Lato", sans-serif;
+  min-height: 100vh;
+}
+
+.gradient {
+  background: linear-gradient(120deg, #b98b24, #c89e2b, #ffd665);
+  color: #ffffff;
+}
+
+.portfolio-navbar {
+  background: linear-gradient(120deg, #b98b24, #c89e2b, #e0bb58);
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-navbar .navbar-brand {
+  color: white !important;
+  font-size: 1.25rem;
+}
+
+.portfolio-navbar .navbar-brand img {
+  max-width: 50px;
+  height: auto;
+}
+
+.portfolio-navbar .nav-link {
+  color: white !important;
+  font-weight: bold;
+  margin: 0 1.25rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link {
+  padding-right: 2rem;
+}
+
+.portfolio-navbar .nav-link:hover,
+.portfolio-navbar .nav-link.active {
+  color: #ffeeab !important;
+}
+
+.custom-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.fit-cover {
+  object-fit: cover;
+}
+
+.scale-on-hover {
+  transition: transform 0.3s ease;
+}
+
+.scale-on-hover:hover {
+  transform: scale(1.05);
+}
+
+.custom-indent {
+  text-indent: 2rem;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* slide-in animations are defined globally in css/animations.css */
+
+.animated-section {
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.h-600 {
+  height: 600px !important;
+}
+
+.portfolio-block {
+  padding: 100px 0;
+}
+
+.heading h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.amenity-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.amenity-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.feature-stat h4 {
+  color: #b98b24;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.project-info {
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cta-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.cta-section h4 {
+  color: white;
+}
+
+/* Text append-up animation (for headings, paragraphs, spans) */
+.append-up {
+  display: inline-block; /* allows transform on inline text */
+  animation: append-up 700ms ease-out both;
+  will-change: transform, opacity;
+}
+
+@keyframes append-up {
+  from {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .append-up {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/* THEME BUTTONS */
+/* Primary buttons use site gradient */
+.btn-primary {
+  background: linear-gradient(120deg, #b98b24, #c89e2b, #ffd665) !important;
+  border-color: #ffd665 !important;
+  color: #fff !important;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  filter: brightness(0.95);
+  color: #fff !important;
+  border-color: #ffd665 !important;
+}
+.btn-primary:active {
+  filter: brightness(0.9);
+}
+
+/* Outline primary adopts theme color */
+.btn-outline {
+  color: #ffff !important;
+  border-color: #ffff !important;
+  background: transparent !important;
+}
+.btn-outline:hover,
+.btn-outline:focus {
+  color: #fff !important;
+  border-color: #ffffff !important;
+}
+
+/* Optional explicit theme classes */
+.btn-theme {
+  background: linear-gradient(120deg, #b98b24, #c89e2b, #ffd665) !important;
+  border-color: #ffd665 !important;
+  color: #fff !important;
+}
+.btn-outline-theme {
+  color: #c89e2b !important;
+  border-color: #ffd665 !important;
+  background: transparent !important;
+}
+.btn-outline-theme:hover {
+  color: #fff !important;
+  border-color: #ffd665 !important;
+}
+
+/* Map legacy btn-brown to theme */
+.btn-brown {
+  background: linear-gradient(120deg, #b98b24, #c89e2b, #ffd665) !important;
+  border-color: #ffd665 !important;
+  color: #fff !important;
+}
+.btn-brown:hover {
+  filter: brightness(0.95);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .heading h2 {
+    font-size: 2rem;
+  }
+
+  .carousel h1 {
+    font-size: 2rem !important;
+    padding-top: 150px !important;
+  }
+
+  .custom-indent {
+    text-indent: 1rem;
+  }
+}
+
+/* Bootstrap overrides */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.carousel-item img {
+  border-radius: 0;
+}
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+/* Form styles */
+.form-control:focus {
+  border-color: #ff6b35;
+  box-shadow: 0 0 0 0.2rem rgba(255, 107, 53, 0.25);
+}
+
+.form-select:focus {
+  border-color: #ff6b35;
+  box-shadow: 0 0 0 0.2rem rgba(255, 107, 53, 0.25);
+}
+
+.list-group {
+  --bs-list-group-bg: transparent;
+}
+
+.list-group-item {
+  background-color: transparent !important;
+  color: #000 !important;
+}
+
+.list-group-item-action:hover,
+.list-group-item-action:focus {
+  background-color: rgba(0, 0, 0, 0.03) !important; /* subtle hover */
+  color: #000 !important;
+}
+
+/* Utility: medium shadow (between .shadow-sm and .shadow-lg) */
+.shadow-md {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.gradient h1,
+.gradient h2,
+.gradient h3,
+.gradient h4,
+.gradient h5,
+.gradient h6,
+.gradient p {
+  color: #fff !important;
+}
+
+.btn-secondary {
+  background-color: #ffffff !important;
+  color: #b98b24 !important;
+  border-color: #ffffff !important;
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #f8f9fa !important;
+  border-color: #f8f9fa !important;
+  color: #b98b24 !important;
+}
+.btn-secondary:active,
+.btn-secondary.active,
+.show > .btn-secondary.dropdown-toggle {
+  background-color: #f0f0f0 !important;
+  border-color: hsl(0, 0%, 94%) !important;
+  color: #b98b24 !important;
+}

@@ -110,20 +110,4 @@ For inquiries about Urban Deca Homes projects:
 - **Email**: info@urbandecahomes.com
 - **Address**: 123 Business District, Makati City, Metro Manila
 
-## 🤝 Contributing
-
-This project was converted from a static HTML website to a modern React application. When contributing:
-
-1. Follow React best practices and hooks patterns
-2. Maintain responsive design principles
-3. Use Bootstrap components where possible
-4. Test across different devices and browsers
-5. Keep the professional corporate aesthetic
-
-## 📝 License
-
-This project is for demonstration purposes. All content and branding belong to Urban Deca Homes.
-
----
-
 **Urban Deca Homes** - _Your dream home awaits_

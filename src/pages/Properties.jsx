@@ -91,7 +91,7 @@ const Properties = () => {
 
   return (
     <main className="page project-detail-page">
-      <Container className="page py-5 pt-100" id="properties">
+      <Container className="page py-5 pt-100 animated-section" id="properties">
         {/* Page Header */}
         <Row>
           <Col>

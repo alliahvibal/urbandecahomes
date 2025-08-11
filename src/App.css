@@ -59,11 +59,6 @@ html {
   padding-right: 2rem;
 }
 
-.portfolio-navbar .nav-link:hover,
-.portfolio-navbar .nav-link.active {
-  color: #ffeeab !important;
-}
-
 .custom-shadow {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }

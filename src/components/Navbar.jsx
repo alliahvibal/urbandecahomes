@@ -29,45 +29,23 @@ function Navbar() {
         <BootstrapNavbar.Toggle aria-controls="navbarNav" />
         <BootstrapNavbar.Collapse id="navbarNav">
           <Nav className="ms-auto">
-            <LinkContainer to="/">
-              <Nav.Link className={location.pathname === "/" ? "active" : ""}>
-                Home
-              </Nav.Link>
+            <LinkContainer to="/" end>
+              <Nav.Link>Home</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/properties">
-              <Nav.Link
-                className={location.pathname === "/properties" ? "active" : ""}
-              >
-                Properties
-              </Nav.Link>
+            <LinkContainer to="/properties" end>
+              <Nav.Link>Properties</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/projects">
-              <Nav.Link
-                className={location.pathname === "/projects" ? "active" : ""}
-              >
-                Projects
-              </Nav.Link>
+            <LinkContainer to="/projects" end>
+              <Nav.Link>Projects</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/amenities">
-              <Nav.Link
-                className={location.pathname === "/amenities" ? "active" : ""}
-              >
-                Amenities
-              </Nav.Link>
+            <LinkContainer to="/amenities" end>
+              <Nav.Link>Amenities</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/about">
-              <Nav.Link
-                className={location.pathname === "/about" ? "active" : ""}
-              >
-                About
-              </Nav.Link>
+            <LinkContainer to="/about" end>
+              <Nav.Link>About</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/contact">
-              <Nav.Link
-                className={location.pathname === "/contact" ? "active" : ""}
-              >
-                Contact Us
-              </Nav.Link>
+            <LinkContainer to="/contact" end>
+              <Nav.Link>Contact Us</Nav.Link>
             </LinkContainer>
           </Nav>
         </BootstrapNavbar.Collapse>

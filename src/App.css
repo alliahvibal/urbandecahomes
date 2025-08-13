@@ -173,14 +173,14 @@ html {
 /* Primary buttons use site gradient */
 .btn-primary {
   background: linear-gradient(120deg, #b98b24, #c89e2b, #ffd665) !important;
-  border-color: #ffd665 !important;
+  border-color: transparent !important;
   color: #fff !important;
 }
 .btn-primary:hover,
 .btn-primary:focus {
   filter: brightness(0.95);
   color: #fff !important;
-  border-color: #ffd665 !important;
+  border-color: transparent !important;
 }
 .btn-primary:active {
   filter: brightness(0.9);
@@ -201,23 +201,23 @@ html {
 /* Optional explicit theme classes */
 .btn-theme {
   background: linear-gradient(120deg, #b98b24, #c89e2b, #ffd665) !important;
-  border-color: #ffd665 !important;
+  border-color: transparent !important;
   color: #fff !important;
 }
 .btn-outline-theme {
   color: #c89e2b !important;
-  border-color: #ffd665 !important;
+  border-color: transparent !important;
   background: transparent !important;
 }
 .btn-outline-theme:hover {
   color: #fff !important;
-  border-color: #ffd665 !important;
+  border-color: transparent !important;
 }
 
 /* Map legacy btn-brown to theme */
 .btn-brown {
   background: linear-gradient(120deg, #b98b24, #c89e2b, #ffd665) !important;
-  border-color: #ffd665 !important;
+  border-color: transparent !important;
   color: #fff !important;
 }
 .btn-brown:hover {

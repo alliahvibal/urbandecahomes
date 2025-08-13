@@ -1,14 +1,13 @@
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-function Projects() {
+function Developments() {
   const projects = [
     {
       id: "ortigas",
       name: "Urban Deca Homes Ortigas",
       image: "./assets/images/ortigas-site-wide.png",
-      description:
-        "Modern living spaces designed for comfort and style.",
+      description: "Modern living spaces designed for comfort and style.",
       link: "/deca-ortigas",
     },
     {
@@ -38,11 +37,11 @@ function Projects() {
   ];
 
   return (
-    <main className="page projects-page" id="projects">
+    <main className="page projects-page" id="developments">
       <section className="portfolio-block projects-cards animated-section">
         <Container>
           <div className="heading mb-5">
-            <h2>PROJECTS</h2>
+            <h2>DEVELOPMENTS</h2>
           </div>
           <Row>
             {projects.map((project) => (
@@ -78,4 +77,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Developments;

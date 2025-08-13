@@ -11,7 +11,7 @@ const Properties = () => {
       id: 1,
       title: "Ortigas Tower Studio",
       price: "₱3.2M",
-      type: "apartment",
+      type: "condominium",
       bedrooms: 1,
       bathrooms: 1,
       area: "24 sqm",
@@ -78,7 +78,7 @@ const Properties = () => {
       location: "Marikina, Metro Manila",
       image: "/assets/images/property6.jpg",
       featured: true,
-    },
+    }
   ];
 
   const filteredProperties = sampleProperties.filter((property) => {
@@ -96,7 +96,7 @@ const Properties = () => {
         <Row>
           <Col>
             <div className="heading mb-5 text-center">
-              <h2>Properties</h2>
+              <h2>PROPERTIES</h2>
               <p className="lead">Find a unit that fits your family and budget.</p>
             </div>
           </Col>
@@ -122,6 +122,7 @@ const Properties = () => {
               <option value="all">All Property Types</option>
               <option value="house">Houses</option>
               <option value="apartment">Apartments</option>
+              <option value="condominium">Condominiums</option>
               <option value="townhouse">Townhouses</option>
             </Form.Select>
           </Col>

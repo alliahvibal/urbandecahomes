@@ -9,7 +9,7 @@ import "./js/bootstrap.min.js";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import Projects from "./pages/Projects";
+import Developments from "./pages/Developments.jsx";
 import About from "./pages/About";
 import Amenities from "./pages/Amenities";
 import Contact from "./pages/Contact";
@@ -27,7 +27,7 @@ function AppShell() {
   const location = useLocation();
   // Only show footer on these exact paths
   const footerPaths = new Set([
-    "/projects",
+    "/developments",
     "/amenities",
     "/about",
     "/contact",
@@ -80,7 +80,7 @@ function AppShell() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/properties" element={<Properties />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/developments" element={<Developments />} />
         <Route path="/about" element={<About />} />
         <Route path="/amenities" element={<Amenities />} />
         <Route path="/contact" element={<Contact />} />

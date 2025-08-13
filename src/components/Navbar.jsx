@@ -35,8 +35,8 @@ function Navbar() {
             <LinkContainer to="/properties" end>
               <Nav.Link>Properties</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/projects" end>
-              <Nav.Link>Projects</Nav.Link>
+            <LinkContainer to="/developments" end>
+              <Nav.Link>Developments</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/amenities" end>
               <Nav.Link>Amenities</Nav.Link>
